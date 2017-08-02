@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parks Adoption Agency</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="index.html">Parks Adoption Agency</a>
+        </div>
+       
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="gallery.html#title">Pets
+        <span class="caret"></span></a>
+        <ul class="dropdown-content">
+          <a href="gallery.html#dogs">Dogs</a>
+          <a href="gallery.html#cats">Cats</a>
+          <a href="gallery.html#birds">Birds</a>
+          <a href="gallery.html#miscellaneous">Miscellaneous</a>
+        </ul>
+      </li>
+            <li><a href="game.html">Pick Your Pet</a></li>
+            <li><a href="adopt.html">Adopt</a></li>
+        </ul>              
+
+    </div><!-- navbar collapse -->
+    </nav>
+      </div>
+      
+    <div class="container-fluid style">
+        <div class="adopt">
+            <h1>Want to adopt a pet but cannot decide which one?</h1>
+            <h1>Let us decide for you!!!!</h1>
+        </div>
+    </div>
+    
+    <div class="filler">
+    <div id="container">
+    <div class="random-image">
+      <button type="button" class="btn btn-primary btn-lg" onclick="myFunction()">Click me</button>
+    </div>
+    </div>
+    </div> <!--container-fluid-->
+    
+    <div class="container">
+    <div class="images">
+        <div class="row">
+      			<div class="col-12 col-md-4 col-sm-6">
+						<img class="thumbnail img-responsive" id="pet1" src="images/pet1.jpg">
+				</div>
+      
+				<div class="col-12 col-md-4 col-sm-6">
+						<img class="thumbnail img-responsive" id="pet2" src="images/pet2.jpg">
+				</div>
+				
+				<div class="col-12 col-md-4 col-sm-6">
+						<img class="thumbnail img-responsive" id="pet3" src="images/pet3.jpg">
+				</div>
+    </div><!--row-->
+    </div>
+    </div>
+    
+ 
+    
+    <!-- Always load scripts at the bottom of the body   -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+
+function myFunction() {
+    var r_img = [];
+    r_img[0] = {
+        source:
+            "dog1.jpeg",
+        text:
+            "Kurt/ Austria Shepherd"
+    };
+    r_img[1] = {
+        source:
+            "dog2.jpeg",
+        text:
+            "Tanya/  Beagle"
+    };
+    r_img[2] = {
+        source:
+            "dog3.jpeg",
+        text:
+            "Pomnyun/ German Shepherd"
+    };
+    r_img[3] = {
+        source:
+            "dog4.jpeg",
+        text:
+            "Ahirini/ Papillon"
+    };
+    r_img[4] = {
+        source:
+            "dog5.jpeg",
+        text:
+            "Jack/ Bulldog"
+    };
+    r_img[5] = {
+        source:
+            "dog6.jpg",
+        text:
+            "Davi/ Golden Retriever"
+    };
+    r_img[6] = {
+        source:
+            "cat1.jpeg",
+        text:
+            "Nuella/ Abyssinian"
+    };
+    r_img[7] = {
+        source:
+            "cat2.jpeg",
+        text:
+            "Boldy/ Sphynx"
+    };
+    r_img[8] = {
+        source:
+            "cat3.jpeg",
+        text:
+            "Marianne/Turkish Angora"
+    };
+    r_img[9] = {
+        source:
+            "cat4.jpeg",
+        text:
+            "Ajahn /Bombay"
+    };
+    r_img[10] = {
+        source:
+            "cat5.jpeg",
+        text:
+            "Terissa /Siamese"
+    };
+    r_img[11] = {
+        source:
+            "cat6.jpg",
+        text:
+            "Barack  /Manul"
+    };
+    r_img[12] = {
+        source:
+            "bird1.jpg",
+        text:
+            "Ada/ Parrot"
+    };
+    r_img[13] = {
+        source:
+            "bird2.jpeg",
+        text:
+            "Kimchi/ Lovebird"
+    };
+    r_img[14] = {
+        source:
+            "bird3.jpeg",
+        text:
+            "Sherlock/ Eagle"
+    };
+    r_img[15] = {
+        source:
+            "bird4.jpg",
+        text:
+            "Tango/ Parrot"
+    };
+    r_img[16] = {
+        source:
+            "bird5.jpg",
+        text:
+            "Sunday /Blue Parrot"
+    };
+    r_img[17] = {
+        source:
+            "bird6.jpg",
+        text:
+            "Soju /Parrot"
+    };
+    r_img[18] = {
+        source:
+            "chick1.jpg",
+        text:
+            "Soju/ Chicken"
+    };
+    r_img[19] = {
+        source:
+            "chick2.jpg",
+        text:
+            "Twin/ Chic"
+    };
+    r_img[20] = {
+        source:
+            "fish1.jpg",
+        text:
+            "Nemo/ Tropical fish"
+    };
+    r_img[21] = {
+        source:
+            "hedgehog1.jpg",
+        text:
+            "Chimac/ hedgehog"
+    };
+    r_img[22] = {
+        source:
+            "lizard1.jpg",
+        text:
+            "Oppa/ Lizard"
+    };
+    r_img[23] = {
+        source:
+            "spider1.jpeg",
+        text:
+            "Trump/ Tarantula"
+    };
+  
+
+    var i = Math.floor(r_img.length * Math.random());
+    var s = "";
+    s += '<h1 class="random-text">' + r_img[i].text + "</h1>";
+    s += "<img src='./images/" + r_img[i].source +"' alt='" + r_img[i].text + "'>";
+    document.getElementById('container').innerHTML = s;
+
+}
+
+
+    </script>
+    
+</body>
+
+</html>

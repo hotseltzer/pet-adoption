@@ -32,79 +32,123 @@
           <a class="navbar-brand" href="index.html">Parks Adoption Agency</a>
         </div>
        
+       
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
           <ul class="nav navbar-nav">
+            <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="gallery.html#title">Pets
+        <span class="caret"></span></a>
+        <ul class="dropdown-content">
+          <a href="gallery.html#dogs">Dogs</a>
+          <a href="gallery.html#cats">Cats</a>
+          <a href="gallery.html#birds">Birds</a>
+          <a href="gallery.html#miscellaneous">Miscellaneous</a>
+        </ul>
+      </li>
+            <li><a href="game.html">Pick Your Pet</a></li>
             <li><a href="adopt.html">Adopt</a></li>
-            <li><a href="form.html">Donate</a></li>
-          </ul>
-<div class="dropdown">
-  		<button class="dropbtn"><a href="gallery.html">Animals</a></button>
-  			<div class="dropdown-content">
-    			<a href="gallery.html#dogs">Dogs</a>
-   			    <a href="gallery.html#cats">Cats</a>
-   			    <a href="gallery.html#birds">Birds</a>
-   			    <a href="gallery.html#miscellaneous">Miscellaneous</a>
-  			</div>
-  	</div>       
-    </div><!-- navbar collapse -->
+          </ul>            
+
+                 
+        </div><!-- navbar collapse -->
     </nav>
       </div>
+      
+      
+<div class="container-fluid style">
+    <div class="form">
+      <h1>Adopt a pet from Parks Adoption Agency</h1>
+      <h3>Complete the form below and we will contact you</h3>
+    </div>
+      
+      
+      
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="example-text-input" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="example-text-input" placeholder="First Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="example-text-input" class="col-sm-2 control-label">Last Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="example-text-input" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="example-text-input" class="col-sm-2 control-label">Address</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="example-text-input" placeholder="Address">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="example-text-input" class="col-sm-2 control-label">City</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="example-text-input" placeholder="City">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="example-text-input" class="col-sm-2 control-label">State</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="example-text-input" placeholder="State">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="example-text-input" class="col-sm-2 control-label">Zip Code</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="example-text-input" placeholder="Zip Code">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="example-tel-input" class="col-sm-2 control-label">Telephone</label>
+    <div class="col-sm-10">
+      <input type="tel" class="form-control" id="example-tel-input" placeholder="1-(555)-555-555">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="example-email-input" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="example-email-input" placeholder="Email Address">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="example-text-input" class="col-sm-2 control-label">Comment</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="example-text-input" placeholder="Tell us what pet you are looking to adopt">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+             <button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>ADOPT</button>
+    </div>
+  </div>
+</form>
+    <div class="container">
+    <div class="images">
+        <div class="row">
+      			<div class="col-12 col-md-4 col-sm-6">
+						<img class="thumbnail img-responsive" id="pet4" src="images/pet4.jpg">
+				</div>
+      
+				<div class="col-12 col-md-4 col-sm-6">
+						<img class="thumbnail img-responsive" id="pet5" src="images/pet5.jpg">
+				</div>
+				
+				<div class="col-12 col-md-4 col-sm-6">
+						<img class="thumbnail img-responsive" id="pet6" src="images/pet6.jpg">
+				</div>
+    </div><!--row-->
+    </div>
+
+ </div>
+
     
-    <div class="container-fluid style">
-<br></br>
-<br></br>
-   <div class="row">
-    <div class="col-3 col-md-6 col-sm-3">
-    <div id="container">
-    <div class="random-image">
-      <button onclick="myFunction()">Click me</button>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div> <!--container-fluid-->
-    
- 
+
     
     <!-- Always load scripts at the bottom of the body   -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
-    <script>
-
-function myFunction() {
-    var r_img = [];
-    r_img[0] = {
-        source:
-            "bird1.jpg",
-        text:
-            "Bird"
-    };
-    r_img[1] = {
-        source:
-            "dog1.jpeg",
-        text:
-            "Dog"
-    };
-    r_img[2] = {
-        source:
-            "cat1.jpeg",
-        text:
-            "Cat"
-    };
-
-    var i = Math.floor(r_img.length * Math.random());
-    var s = "";
-    s += '<h1 class="random-text">' + r_img[i].text + "</h1>";
-    s += "<img src='./images/" + r_img[i].source +"' alt='" + r_img[i].text + "'>";
-    document.getElementById('container').innerHTML = s;
-
-}
-
-
-    </script>
-    
 </body>
 
 </html>
